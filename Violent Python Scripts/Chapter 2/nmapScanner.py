@@ -13,7 +13,6 @@ def nmapScan(tgtHost, tgtPort):
     #   nm.scan(hosts='192.168.1.0/24', arguments='-n -sP -PE -PS 21,23,80,3389')
     #So the above would be:
     #   nmScanObj.scan(hosts=tgtHost, arguments=f'-PS {tgtPort}')
-    # New comment this for sync
     
 def main():
     parser = argparse.ArgumentParser(description='Scan Target host and ports')
