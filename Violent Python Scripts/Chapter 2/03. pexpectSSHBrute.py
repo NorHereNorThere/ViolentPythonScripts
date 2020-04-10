@@ -1,4 +1,4 @@
-#While importing modules, python first check the present directory, then standard modules then the folders
+#While importing modules, python first checks the present directory, then standard modules then the folders
 # specifed in paths. So, if I name the script as pexpect, then the first statement import pexpect will import 
 # this file, not the pexpect module from the folder specified in path
 
@@ -19,14 +19,14 @@ def connect(user, host, password):
     ret = child.expect([pexpect.TIMEOUT, ssh_newkey, '[P|p]assword:'])
 
     if ret == 0:
-        print(f'[-] Error Connection')
+        print(f'[-] Error: Connection Timeout')
         return 0
     if ret == 1:
         #Automatically accept the new fingerprint
         child.sendline('yes')
         retnew = child.expect([pexpect.TIMEOUT,'[P|p]assword:'])
         if retnew == 0:
-            print(f'[-] Error Connecting')
+            print(f'[-] Error: Connection Timeout')
             return 0
         if retnew == 1:
             ret == 2     
