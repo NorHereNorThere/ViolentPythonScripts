@@ -34,9 +34,9 @@ def addClient(host, user, password):
 
 
 botNet = []
-addClient('127.0.0.1', 'root', 'toor')
-addClient('127.0.0.1', 'root', 'toor')
-addClient('127.0.0.1', 'root', 'toor')
+addClient('127.0.0.1', 'kayc', 'titpfl@101')
+addClient('127.0.0.1', 'kayc', 'titpfl@101')
+addClient('127.0.0.1', 'kayc', 'titpfl@101')
 
 botnetCommand('uname -v')
 botnetCommand('cat /etc/issue')
