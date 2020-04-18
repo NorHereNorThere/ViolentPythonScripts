@@ -1,7 +1,7 @@
 import ftplib
 import time
 
-#If threading is required, its a better idea to keep that part that needs to be
+#If threading is required, its a better idea to keep the part that needs to be
 # threaded in a function, so that the function can be started as a thread.
 
 def anonLogin(hostname):
