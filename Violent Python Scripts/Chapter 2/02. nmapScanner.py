@@ -4,7 +4,7 @@ import argparse
 def nmapScan(tgtHost, tgtPort):
     nmScanObj = nmap.PortScanner()
     nmScanObj.scan(tgtHost,tgtPort)
-    
+
     state=nmScanObj[tgtHost]['tcp'][int(tgtPort)]['state']
     print(f"[*] {tgtHost} tcp/ {tgtPort} {state}")
 
