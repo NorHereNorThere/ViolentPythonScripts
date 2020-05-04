@@ -4,6 +4,10 @@ import threading
 #from socket import setdefaulttimeout, socket
 #from threading import Semaphore, Thread
 
+
+#Data in sockets need to be send in bytes encoding. This can be done by
+# stringVar.encode() or socketVar.send(b'string to send'): Placing a b before the string
+
 screenLock = threading.Semaphore(value=1)
 
 def connScan(tgtHost,tgtPort):
